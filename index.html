@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Biku❤️</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div id="canvas-container"></div>
+
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+
+        <div id="content">
+            <div class="step active" id="step1">
+                <div class="emoji heart-beat">❤️</div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gradient">Beeku.....</h1>
+                <p class="text-xl text-gray-700 mb-8">I made something special for you...</p>
+                <button class="btn" id="start-btn">Let's Begin!</button>
+            </div>
+
+            <div class="step" id="step2">
+                <div class="emoji">🎉</div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gradient">Happy Birthday Beeku!</h2>
+                <p class="text-lg text-gray-700 mb-6">
+                    “Happy Birthday, my love ❤️ Every moment with you feels like a beautiful dream I never want to wake up from. You’re not just my wife, but my best friend, my biggest blessing, and the love of my life. I’m so grateful for your laughter, your kindness, and the endless love you bring into my world. May this year bring you as much happiness as you’ve given me. I love you more than words can ever say.”
+                </p>
+                <button class="btn" id="next-btn-2">What makes you special?</button>
+            </div>
+
+            <div class="step" id="step3">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8 text-gradient">Here's why you're incredible</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                    <div class="reason-card">
+                        <div class="emoji text-3xl">✨</div>
+                        <h3 class="text-xl font-bold mb-2 text-pink-600">The Way You Call Me “Cheeku”</h3>
+                        <p class="text-gray-700">Every time you say it, my heart melts. It’s the sweetest sound in the world to me.</p>
+                    </div>
+                    <div class="reason-card">
+                        <div class="emoji text-3xl">😊</div>
+                        <h3 class="text-xl font-bold mb-2 text-pink-600">Your Smile</h3>
+                        <p class="text-gray-700">That beautiful smile of yours is my favorite view—it brightens even my darkest days</p>
+                    </div>
+                    <div class="reason-card">
+                        <div class="emoji text-3xl">🌟</div>
+                        <h3 class="text-xl font-bold mb-2 text-pink-600">Your Care</h3>
+                        <p class="text-gray-700">The way you look after me makes me feel like the luckiest man alive. You love me in ways I never even knew I needed.</p>
+                    </div>
+                </div>
+                <button class="btn" id="next-btn-3">A Small Surprise</button>
+            </div>
+
+            <div class="step" id="step4">
+                <div class="emoji">📸</div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gradient">Remember When...</h2>
+                <div class="bg-gradient-to-r from-pink-200 to-rose-200 rounded-xl p-4 md:p-8 mb-8 flex flex-col justify-center items-center">
+                    <img src="./BikuChiku.jpg" height="200" width="200" alt="A special memory" class="rounded-lg shadow-lg">
+                    <p class="text-md md:text-lg text-gray-700 italic mt-4">AI brought us close virtually</p>
+                </div>
+                <p class="text-lg text-gray-700 mb-6">
+                    Every moment with you becomes a cherished memory. Time with you is always special.
+                </p>
+                <button class="btn" id="next-btn-4">One Last Thing</button>
+            </div>
+
+            <div class="step" id="step5">
+                <div class="emoji">🎂</div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gradient">Happy 20 Beeku....</h2>
+                <p class="text-lg text-gray-700 mb-8">
+                    May your year be filled with joy, laughter, and dreams come true. May you always know how special you are.
+                </p>
+                <p class="text-xl font-semibold text-pink-600 mb-8">Happy Birthday, my Sweet Wife! ❤️</p>
+                <button class="btn" id="confetti-btn">Celebrate!</button>
+                <p class="mt-8 text-gray-500 text-sm">Made with ❤️ from Gerol</p>
+            </div>
+        </div>
+    </div>
+
+   <audio id="click-sound" src="Happy Birthday Song!!!-[AudioTrimmer.com].mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
